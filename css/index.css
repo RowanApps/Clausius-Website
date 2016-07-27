@@ -33,9 +33,13 @@ img {
 h1 {
   color: black;
   font-size: 10vw;
-  font-family: 'Raleway',sans-serif;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.5vw;
+  font-weight: 400;
 }
 
 .screenshot-box {
@@ -94,6 +98,11 @@ h1 {
 .mainbody .row .col-sm-4 > *,
 .mainbody .row:first-of-type .col-sm-8 > * {
   align-self: center;
+}
+
+.mainbody .row:first-of-type .col-sm-8 > * > * {
+  margin-top: 10px;
+  text-align: center;
 }
 
 .mainbody .row .col-sm-4,
