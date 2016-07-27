@@ -1,0 +1,121 @@
+.mainbody {
+  margin-top: 120px;
+  width: 100%;
+}
+
+.mainbody .row {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.mainbody .row:first-of-type {
+  margin-top: 80px;
+}
+
+.mainbody .row:nth-of-type(2) {
+  margin-top: 120px;
+}
+
+.rounded-box {
+  width: 200px;
+  height: auto;
+  border-radius: 15%;
+  overflow: hidden;
+}
+
+img {
+  width: inherit;
+  height: auto;
+}
+
+h1 {
+  color: black;
+  font-size: 10vw;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.screenshot-box {
+  width: 300px;
+  height: auto;
+  border: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.mainbody .row:nth-of-type(1n+1) .col-sm-4 {
+  perspective: 1000px;
+}
+
+.mainbody .row:nth-of-type(1n+1) .screenshot-box {
+  transform-style: preserve-3d;
+  transition: all 600ms;
+}
+
+.mainbody .row:nth-of-type(2n+0) .screenshot-box {
+  transform: rotateX(10deg) rotateY(-20deg) rotateZ(10deg);
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+}
+
+.mainbody .row:nth-of-type(2n+1) .screenshot-box {
+  transform: rotateX(10deg) rotateY(20deg) rotateZ(-10deg);
+  box-shadow: -10px 10px 30px rgba(0,0,0,0.3);
+}
+
+.mainbody .row:nth-of-type(1n+1) .screenshot-box:hover {
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+}
+
+.mainbody .row:last-of-type {
+  margin-bottom: 80px;
+}
+
+.mainbody h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.mainbody p {
+  font-size: 14px;
+}
+
+.mainbody .col-sm-4,
+.mainbody .col-sm-8 {
+  height: 100%;
+}
+
+.mainbody .row .col-sm-4 > *,
+.mainbody .row:first-of-type .col-sm-8 > * {
+  align-self: center;
+}
+
+.mainbody .row .col-sm-4,
+.mainbody .row:first-of-type .col-sm-8 {
+  display: flex;
+  justify-content: center;
+}
+
+.mainbody .row:nth-of-type(2n+0) .col-sm-4,
+.mainbody .row:nth-of-type(2n+0) .col-sm-8 {
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.mainbody .row:nth-of-type(2n+1) .col-sm-4,
+.mainbody .row:nth-of-type(2n+1) .col-sm-8 {
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+div.test {
+    width:100%;
+    height:700px;
+    background-color: blue;
+}
